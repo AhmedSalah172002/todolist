@@ -1,0 +1,105 @@
+body {
+  background-color: blueviolet !important;
+  user-select: none;
+  
+}
+.head{
+  color: white;
+}
+.form{
+  padding: 15px 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  margin: 5vh auto 0;
+  max-height: 80vh;
+  overflow: scroll;
+  
+}
+.form::-webkit-scrollbar {
+  width: 18px;
+}
+.form::-webkit-scrollbar-track {
+  background-color: #4b5496;
+}
+.form::-webkit-scrollbar-thumb {
+  background-color: #021f75;
+  
+}
+.form::-webkit-scrollbar-thumb:hover {
+  background-color: #0c44ed;
+}
+.form::-webkit-scrollbar-corner {
+  background-color: #4b5496;
+}
+.input-task{
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px 0 0 5px;
+  border-color: blueviolet;
+  width: 80%;
+  
+  
+}
+.form button{
+  padding: 5px 10px;
+  font-size: 18px;
+  width: 20%;
+  border-radius: 0 5px 5px 0;
+  background-color: blueviolet;
+  color: white;
+  border-color: transparent;
+}
+@media (max-width:991.3px) {
+  .form{
+    width: 100%;
+  }
+}
+@media (max-width:767px) {
+  .input-task{
+    width: 70%;
+  }
+  .form button{
+    width: 30%;
+  }
+}
+@media (max-width:412px) {
+  .input-task{
+    width: 55%;
+  }
+  .form button{
+    width: 45%;
+  }
+}
+.task{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius:5px;
+  background-color: blueviolet;
+  color: white;
+  margin-bottom: 15px;
+}
+.task span{
+  cursor: pointer;
+}
+.content{
+  overflow: hidden;
+  width: 80%;
+  
+}
+.task .remove{
+  transition: .3s;
+}
+.task .remove:hover{
+  color:red;
+  
+}
+.complete{
+  text-decoration: line-through !important;
+  opacity: .5;
+}
+.not-allowed{
+  cursor: not-allowed !important;
+}
